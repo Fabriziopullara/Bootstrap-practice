@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <title>Bootstrap</title>
 </head>
 
@@ -15,18 +18,48 @@
 
   <div class="container-nav">
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-      <img style="width: 100px;" src="images/logo.png" alt="logo">
+      <img class="logo animate__heartBeat" style="width: 100px;" src="images/logo.png" alt="logo">
 
-      <a class="links"="#">Home</a>
-      <a class="links"="#">Work with us</a>
-      <a class="links"="#">Projects</a>
 
+      <div class="big-screen-nav">
+      <a class="icon-link icon-link-hover"
+        style="--bs-link-hover-color-rgb: 25, 135, 84;text-decoration: none;" href="#">
+        Home</a>
+      <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;text-decoration: none;"
+        href="#">
+        Work with us</a>
+      <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;text-decoration: none;"
+        href="#">
+        Projects</a>
+      </div> 
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-primary" type="submit">Search</button>
       </form>
+  
+      <div class="container-dropdown">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-bars" style="color: #000000;"></i>
+
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Home</button></li>
+            <li><button class="dropdown-item" type="button"> Work with us</button></li>
+            <li><button class="dropdown-item" type="button">Projects</button></li>
+          </ul>
+
+          
+        </div>
+      </div>
+
+
     </nav>
   </div>
+
+
+
 
 
   <div class="container p-5">
@@ -53,14 +86,16 @@
     </div>
   </div>
 
-<div class="container-text">
-  <h1 class="display-2">Bootstrap practice</h1>
-  <p class="lead">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut debitis excepturi quas ipsam eveniet ullam quod
-    deleniti? Sequi corporis repudiandae aut in voluptatibus! Repellat, repudiandae quidem! Perferendis, magnam
-    consectetur?
-  </p>
-</div>
+  <div class="container-text">
+    <h1 class="display-2">Bootstrap practice</h1>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut debitis excepturi quas ipsam eveniet ullam quod
+      deleniti? Sequi corporis repudiandae aut in voluptatibus! Repellat, repudiandae quidem! Perferendis, magnam
+      consectetur?
+    </p>
+  </div>
+
+
 
 
 

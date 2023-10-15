@@ -1,0 +1,53 @@
+body{
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.315);
+}
+
+
+
+.navbar{
+  padding: 10px;
+}
+
+img{
+  border-radius: 20px;
+}
+
+.container-text{
+  max-width: 1050px;
+  max-width: fit-content;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.icon-link{
+  padding: 20px;
+}
+
+  .container-dropdown{
+    display: none;
+  }
+
+@media only screen and (max-width: 767px){
+.big-screen-nav{
+  display: none;
+}
+}
+
+
+@media only screen and (max-width: 767px){
+  .container-dropdown{
+    display: block;
+  }
+  .d-flex{
+    max-width: 200px;
+    width: 100%;
+  }
+  
+.logo{
+  max-width: 70px;
+  width: 100%;
+}
+}
